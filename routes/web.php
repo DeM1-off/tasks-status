@@ -20,7 +20,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/access-denied', function () {
+    return view('access-denied');
+})->name('access-denied');
 
 
 Route::middleware('auth')->group(function () {

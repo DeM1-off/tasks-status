@@ -14,8 +14,9 @@ class TaskController extends Controller
     /**
      * @param  \App\Service\Task\TaskServiceInterface  $service
      */
-    public function __construct( private TaskServiceInterface  $service)
+    public function __construct(private TaskServiceInterface $service)
     {
+        $this->middleware('setting')->only('show', 'edit', 'destroy', 'update');
     }
 
     /**
@@ -24,8 +25,8 @@ class TaskController extends Controller
     public function index()
     {
         return view('tasks.index', [
-            'users'=> $this->service->index()
-          ]);
+          'users' => $this->service->index(),
+        ]);
     }
 
     /**
@@ -33,8 +34,8 @@ class TaskController extends Controller
      */
     public function create()
     {
-        return view('tasks.create' ,[
-          'status'=> StatusEnum::toValues()
+        return view('tasks.create', [
+          'status' => StatusEnum::toValues(),
         ]);
     }
 
@@ -53,7 +54,7 @@ class TaskController extends Controller
     public function show(string $id)
     {
         return view('tasks.show', [
-          'task'=> $this->service->show($id)
+          'task' => $this->service->show($id),
         ]);
     }
 
@@ -63,8 +64,8 @@ class TaskController extends Controller
     public function edit(string $id)
     {
         return view('tasks.edit', [
-          'task'=> $this->service->edit($id),
-          'status'=> StatusEnum::toValues()
+          'task' => $this->service->edit($id),
+          'status' => StatusEnum::toValues(),
         ]);
     }
 
@@ -73,7 +74,7 @@ class TaskController extends Controller
      */
     public function update(TaskRequest $request, string $id)
     {
-        $this->service->update($request->all(),$id);
+        $this->service->update($request->all(), $id);
         return redirect('task.index');
     }
 
@@ -85,4 +86,5 @@ class TaskController extends Controller
         $task->delete();
         return redirect('task');
     }
+
 }
