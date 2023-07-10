@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+
+                <div class="card-header  text-center">{{ __('Dashboard') }}</div>
+
+
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,8 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                        <a class="btn btn-success text-white" href="{{ route('task.create') }}">{{ __('Task create') }}</a>
+
                 </div>
             </div>
         </div>
