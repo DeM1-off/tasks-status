@@ -12,6 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
 
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -32,6 +33,7 @@
 
                     <ul class="navbar-nav me-auto">
                         <a class="nav-link" href="{{ route('task.index') }}">{{ __('Task') }}</a>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

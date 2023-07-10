@@ -22,9 +22,11 @@ Route::get('/', function () {
 Auth::routes();
 
 
+
 Route::middleware('auth')->group(function () {
     Route::resource('task', TaskController::class);
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
   ->name('home');
+
