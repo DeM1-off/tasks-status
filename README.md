@@ -1,66 +1,70 @@
-php artisan make:middleware <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel PHP Framework v10.14.1
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Task
+-  auth
+-  CRUD task 
+-  middleware
+-  enum
 
-## About Laravel
+## Using Files
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- migration  tasks
+- Model      Task.php,User.php
+- Controller TaskController.php
+- Requests   TaskRequest.php
+- Services   TaskService.php and TaskServiceInterface.php
+- Enum       StatusEnum.php
+- Middleware CanEditTask.php
+- Added      In custom pattern Service
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requirements
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP >= 8.1
 
-## Learning Laravel
+## Package
+-  "laravel/ui": "^4.2",
+-  "spatie/laravel-enum": "^3.0"
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Installation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Just clone the project to anywhere in your computer.
+- Run  composer install  <br>
+- php artisan migrate
+- npm install
+- npm run dev
+- php artisan key:generate
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Now you are done.
+<br>
 
-## Laravel Sponsors
+`php artisan serve` and open the project on the browser. 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+## Login and Register
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+https://github.com/DeM1-off/tasks-status/assets/52733818/9c058d66-634e-4491-bdb1-253f0adffddc
 
-## Contributing
+## Add Task
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+https://github.com/DeM1-off/tasks-status/assets/52733818/aafe8937-eeec-4e4a-b49a-6324c1c94723
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Edit Task
 
-## Security Vulnerabilities
+https://github.com/DeM1-off/tasks-status/assets/52733818/2d95c5b1-5cd0-4bae-a3b4-6b7ca644dfe5
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Show tast
 
-## License
+https://github.com/DeM1-off/tasks-status/assets/52733818/ea6fd96b-cd76-4cff-83cc-a0ab42b79cc4
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Middleware tast (if a user wants to view another user's task, they will be redirected to a 404 page)
+
+https://github.com/DeM1-off/tasks-status/assets/52733818/db1279ff-d69d-44b3-86ea-23a0ac90345b
+
+
+
+
+
+
+
+
