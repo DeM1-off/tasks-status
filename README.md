@@ -57,7 +57,7 @@ https://github.com/DeM1-off/tasks-status/assets/52733818/2d95c5b1-5cd0-4bae-a3b4
 
 https://github.com/DeM1-off/tasks-status/assets/52733818/ea6fd96b-cd76-4cff-83cc-a0ab42b79cc4
 
-# Middleware tast (if a user wants to view another user's task, they will be redirected to a 404 page)
+# Middleware tast (if a user wants to view another user's task, they will be redirected to a access-denied page)
 
 https://github.com/DeM1-off/tasks-status/assets/52733818/db1279ff-d69d-44b3-86ea-23a0ac90345b
 
