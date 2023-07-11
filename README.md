@@ -48,6 +48,9 @@ https://github.com/DeM1-off/tasks-status/assets/52733818/9c058d66-634e-4491-bdb1
 
 https://github.com/DeM1-off/tasks-status/assets/52733818/aafe8937-eeec-4e4a-b49a-6324c1c94723
 
+## Validate Task
+
+https://github.com/DeM1-off/tasks-status/assets/52733818/9a2f54bb-f69a-4d4a-ad75-39166514852c
 
 ## Edit Task
 
