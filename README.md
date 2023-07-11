@@ -53,7 +53,7 @@ https://github.com/DeM1-off/tasks-status/assets/52733818/aafe8937-eeec-4e4a-b49a
 
 https://github.com/DeM1-off/tasks-status/assets/52733818/2d95c5b1-5cd0-4bae-a3b4-6b7ca644dfe5
 
-## Show tast
+## Show Task
 
 https://github.com/DeM1-off/tasks-status/assets/52733818/ea6fd96b-cd76-4cff-83cc-a0ab42b79cc4
 
